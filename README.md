@@ -4,7 +4,7 @@ This repository contains a PyTorch implementation of the Wasserstein GAN with gr
 
 WGAN works to minimize the Wasserstein-1 distance between the generated data distribution and the real data distribution. This technique offers more stability than the original GAN. 
 
-WGAN-GP improves upon WGAN by using a gradient penalty heuristic rather than weight clipping to enforce the 1-Lipschitz condition of the critic in the Wasserstein-1 distance.
+WGAN-GP improves upon WGAN by using a gradient penalty heuristic rather than weight clipping to encourage the discriminator to be locally K-Lipschitz on the data manifold.
 
 For more details, see the original paper https://arxiv.org/pdf/1704.00028.pdf.
 
