@@ -36,10 +36,6 @@ def get_train_set(batch_size):
             trainset, batch_size=batch_size, shuffle=True, num_workers=2
     )
     return trainloader
-
-    train_sampler = torch.utils.data.RandomSampler(trainset, 
-                                replacement=True, num_samples=batch_size)
-    return iter(train_sampler)  
                                                                 
 def latent_samples(batch_size, latent_dim):
     '''Returns iid samples from the standard normal distribution in the shape 
